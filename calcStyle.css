@@ -1,0 +1,112 @@
+body{
+  background: #95A5A6; /* webpage background */
+}
+
+.heading { /* Calculate */
+  font-family: 'Antic';
+  font-size: 23px;
+  text-align: center;
+  color: silver;
+  margin-top: -7px;
+}
+.display {
+  background: white;
+  font-family: 'Antic';
+  font-size: 38px;
+  color: black;
+  text-align: right;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.display-operations {
+  font-size: 30px;
+  color: grey;
+}
+
+.calc { /* calculator base that buttons sit on */
+  width: 330px;
+  background: #0B5345;
+  margin: 20px auto; /* center */
+  padding-top: 10px;
+  padding-bottom: 405px;
+}
+
+.row {
+  margin-left: 6px;
+  margin-top: 10px;
+}
+
+.button { /* individual buttons */
+  z-index: 0;
+  position: relative;
+  height: 80px;
+  width: 80px;
+  background-color: #1ABC9C; /* teal */
+  color: #FFDAB9; /* text color */
+  font-size: 300%;
+  float: left;
+  border: 1px solid #0B5345;
+  font-family:'Antic';/* imprinted numbers */
+}
+.button:hover { /* button base background upon hover*/
+  background: #76D7C4; /* lighter teal */
+}
+.button:after { /* background - middle square */
+  z-index: -5;  /* set graphic behind number */
+  position: absolute;
+  width: 53px;
+  height: 53px;
+  background-color: #48C9B0;
+  content: "";
+  top: 12px;
+  left: 12px;
+}
+.button:hover:after {
+  background-color: #A3E4D7;
+}
+
+.button:focus { /* to get rid of blue outline onclick*/
+  outline:none;
+}
+
+.ac, .ce {
+  background: #CD6155; /* pink */
+  color: #B22222; /* font color*/
+}
+.ac:hover, .ce:hover { /* base background */
+  background: #F1948A; /* lighter */
+}
+.ac:after, .ce:after {
+  background-color: #D98880;
+}
+.ac:hover:after, .ce:hover:after { /* over middle square*/
+  background-color: #F5B7B1;
+}
+
+
+.equals {
+  width: 160px;
+}
+
+.equals:after { /* rectangle inside equals button*/
+  left: 22px;
+  width: 110px;
+}
+.multi, .plus, .minus, .divide, .percent, .decimal, .equals{
+  background: #138D75;
+  color: #AED581;
+}
+.multi:hover, .plus:hover, .minus:hover, .divide:hover,
+.percent:hover, .decimal:hover, .equals:hover{
+  background: #73C6B6;
+
+}
+.multi:after, .plus:after, .minus:after, .divide:after, .percent:after, .decimal:after, .equals:after{
+  background-color: #45B39D;
+}
+.multi:hover:after, .plus:hover:after, .minus:hover:after, .divide:hover:after, .percent:hover:after,
+.decimal:hover:after, .equals:hover:after {
+  opacity: 0.5;
+}
